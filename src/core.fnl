@@ -20,3 +20,7 @@
       ;; add what each keypress should do in each scene
       (when (and scene scene.keypressed)
         (scene:keypressed key))))
+
+(fn love.mousepressed []
+  (when (and scene scene.mousepressed)
+    (scene:mousepressed)))

@@ -2,8 +2,16 @@
 fennel = require("fennel")
 
 -- add src to paths
-package.path = package.path .. ";./src/?.lua"
-fennel.path = fennel.path .. ";./src/?.fnl"
+package.path = package.path
+  .. ";./src/?.lua"
+  .. ";./src/?/init.lua"
+  .. ";./lib/?.lua"
+  .. ";./lib/?/init.lua"
+fennel.path = fennel.path
+  .. ";./src/?.fnl"
+  .. ";./src/?/init.fnl"
+  .. ";./lib/?.fnl"
+  .. ";./lib/?/init.fnl"
 
 table.insert(package.loaders,
   _G.fennel.make_searcher({correlate=true,
