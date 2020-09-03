@@ -1,0 +1,4 @@
+#+TITLE: Love Shadow Demo
+
+Impling https://github.com/matiasah/shadows/wiki/Standard-Demonstration
+to learn more about shadows in love2d
